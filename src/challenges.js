@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 // Desafio 1
 function compareTrue(a, b) {
   if (a > b && b < a) {
@@ -7,7 +6,7 @@ function compareTrue(a, b) {
   return false;
 }
 
-console.log(compareTrue(1, 5));
+console.log(compareTrue(5, 1));
 
 // Desafio 2
 function calcArea() {
