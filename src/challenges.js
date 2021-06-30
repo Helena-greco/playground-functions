@@ -14,12 +14,14 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
+// Ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/split
 function splitSentence(string) {
   let word = string.split(' ');
   return word;
 }
 
 // Desafio 4
+// Ref: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 function concatName(array) {
   let result = [array[array.length - 1], array[0]];
   return result.join(', ');
@@ -32,17 +34,11 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(numbers) {
-  let highestNum = Math.max.apply(null, numbers);
-  let numberOfTimes = 0;
-  for (let num of numbers) {
-    if (num === highestNum) {
-      numberOfTimes += 1;
-    }
-  }
-  return numberOfTimes;
 }
 
 // Desafio 7
+/* * O comando Math.abs foi utilizado para calcular a distância de um número pelo outro, sendo colocado entre parênteses. ** https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs */
+
 function catAndMouse(mouse, cat1, cat2) {
   let cat1Position = Math.abs(mouse - cat1);
   let cat2Position = Math.abs(mouse - cat2);
@@ -73,6 +69,9 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
+
+/* * o comando .replace foi utilizado para substituir o valor de uma variável por outro em uma nova variável, começando primeiro pelo valor inicial, separado por vírgula e após o valor substituído. O valor em questão encontra-se entre barras para separar o caractere da frase em si e utiliza-se o 'g' para uma pesquisa global no valor. ** Link: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replace */
+
 function encode(stringLetter) {
   let newPhrase = stringLetter.replace(/a/g, '1');
   newPhrase = newPhrase.replace(/e/g, '2');
