@@ -34,7 +34,16 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
+/** Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort */
 function highestCount(numbers) {
+  let count = 0;
+  let highestNum = numbers.sort((a, b) => a - b); // Para comparar números no comando .sort usa-se a subtração dos elementos para ordenar o array em ordem crescente.
+  for (let index = 0; index < highestNum.length; index += 1) {
+    if (highestNum[index] === highestNum[highestNum.length - 1]) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 // Desafio 7
@@ -54,7 +63,6 @@ function catAndMouse(mouse, cat1, cat2) { // O comando Math.abs foi utilizado na
 // Desafio 8
 function fizzBuzz(array) {
   let status = [];
-  fun
   for (let index of array) {
     if (index % 3 === 0 && index % 5 === 0) {
       status.push('fizzBuzz');
