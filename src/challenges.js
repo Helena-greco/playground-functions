@@ -13,10 +13,6 @@ function calcArea(base, height) {
   return result;
 }
 
-console.log(calcArea(10, 50));
-console.log(calcArea(5, 2));
-console.log(calcArea(51, 1));
-
 // Desafio 3
 function splitSentence(string) {
   let word = string.split(' ');
@@ -78,11 +74,20 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(stringLetter) {
-  for (let index of stringLetter) {
-    
+  let newPhrase = stringLetter.replace(/a/g, '1');
+  newPhrase = newPhrase.replace(/e/g, '2');
+  newPhrase = newPhrase.replace(/i/g, '3');
+  newPhrase = newPhrase.replace(/o/g, '4');
+  newPhrase = newPhrase.replace(/u/g, '5');
+  return newPhrase;
 }
 function decode(stringNumber) {
-  // seu código aqui
+  let newPhrase = stringNumber.replace(/1/g, 'a');
+  newPhrase = newPhrase.replace(/2/g, 'e');
+  newPhrase = newPhrase.replace(/3/g, 'i');
+  newPhrase = newPhrase.replace(/4/g, 'o');
+  newPhrase = newPhrase.replace(/5/g, 'u');
+  return newPhrase;
 }
 
 module.exports = {
