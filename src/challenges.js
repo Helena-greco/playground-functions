@@ -14,12 +14,14 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
+/** Source: https://blog.betrybe.com/javascript/javascript-split/ */
 function splitSentence(string) {
   let word = string.split(' '); // .split foi utilizado para separar as string com espaço, como determinado entre parênteses.
   return word;
 }
 
 // Desafio 4
+/** Source: https://www.w3schools.com/jsref/jsref_join.asp */
 function concatName(array) {
   let result = [array[array.length - 1], array[0]];
   return result.join(', '); // .join foi utilizado para juntar strings que foram selecionadas pelo seu índice.
@@ -35,6 +37,7 @@ function highestCount(numbers) {
 }
 
 // Desafio 7
+/** Source: https://www.w3schools.com/jsref/jsref_abs.asp */
 function catAndMouse(mouse, cat1, cat2) { // O comando Math.abs foi utilizado nas linhas 43 e 44 para calcular a distância do gato para o rato, sendo colocado entre parênteses.
   let cat1Position = Math.abs(mouse - cat1);
   let cat2Position = Math.abs(mouse - cat2);
@@ -50,6 +53,7 @@ function catAndMouse(mouse, cat1, cat2) { // O comando Math.abs foi utilizado na
 // Desafio 8
 function fizzBuzz(array) {
   let status = [];
+  fun
   for (let index of array) {
     if (index % 3 === 0 && index % 5 === 0) {
       status.push('fizzBuzz');
@@ -65,6 +69,7 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
+/** Source: https://www.w3schools.com/jsref/jsref_replace.asp */
 function encode(stringLetter) {
   let newPhrase = stringLetter.replace(/a/g, '1'); // foi criada uma nova variável para receber o novo valor que vai ser substituído, foi utilizado o comando .replace nas linhas 72 a 76, e 80 a 84 com o objetivo de substituir as vogais, que foram separadas entre barras para separar o valor dos demais, o 'g' para direcionar uma pesquisa global, feita em toda a string, em números como solicitado, e vice-versa.
   newPhrase = newPhrase.replace(/e/g, '2');
