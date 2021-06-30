@@ -78,7 +78,8 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(stringLetter) {
-  // seu código aqui
+  for (let index of stringLetter) {
+    
 }
 function decode(stringNumber) {
   // seu código aqui
