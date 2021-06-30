@@ -60,15 +60,27 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let status = [];
+  for (let index of array) {
+    if (index % 3 === 0 && index % 5 !== 0) {
+      status.push('fizz');
+    } else if (index % 5 === 0 && index % 3 !== 0) {
+      status.push('buzz');
+    } else if (index % 5 === 0 && index % 3 === 0) {
+      status.push('fizzBuzz');
+    } else {
+      status.push('bug!');
+    }
+  }
+  return status;
 }
 
 // Desafio 9
-function encode() {
+function encode(stringLetter) {
   // seu código aqui
 }
-function decode() {
+function decode(stringNumber) {
   // seu código aqui
 }
 
