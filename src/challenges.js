@@ -9,16 +9,14 @@ function compareTrue(value1, value2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let result = (base * height) / 2;
-  return result;
+  return (base * height) / 2;
 }
 
 // Desafio 3
 /** Source: https://blog.betrybe.com/javascript/javascript-split/ */
 // .split foi utilizado para separar as string com espaço, como determinado entre parênteses.
 function splitSentence(string) {
-  let word = string.split(' '); 
-  return word;
+  return string.split(' ');
 }
 
 // Desafio 4
@@ -26,13 +24,12 @@ function splitSentence(string) {
 // .join foi utilizado para juntar strings que foram selecionadas pelo seu índice.
 function concatName(array) {
   let result = [array[array.length - 1], array[0]];
-  return result.join(', '); 
+  return result.join(', ');
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  let result = (wins * 3) + (ties);
-  return result;
+  return (wins * 3) + (ties);
 }
 
 // Desafio 6
@@ -40,7 +37,7 @@ function footballPoints(wins, ties) {
 // Para comparar números no comando .sort usa-se a subtração dos elementos para ordenar o array em ordem crescente
 function highestCount(numbers) {
   let count = 0;
-  let highestNum = numbers.sort((a, b) => a - b); .
+  let highestNum = numbers.sort((a, b) => a - b);
   for (let index = 0; index < highestNum.length; index += 1) {
     if (highestNum[index] === highestNum[highestNum.length - 1]) {
       count += 1;
@@ -52,7 +49,7 @@ function highestCount(numbers) {
 // Desafio 7
 /** Source: https://www.w3schools.com/jsref/jsref_abs.asp */
 // O comando Math.abs foi utilizado nas linhas 43 e 44 para calcular a distância do gato para o rato, sendo colocado entre parênteses.
-function catAndMouse(mouse, cat1, cat2) { 
+function catAndMouse(mouse, cat1, cat2) {
   let cat1Position = Math.abs(mouse - cat1);
   let cat2Position = Math.abs(mouse - cat2);
   if (cat1Position > cat2Position) {
