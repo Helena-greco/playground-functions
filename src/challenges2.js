@@ -22,7 +22,7 @@ function generatePhoneNumber(phoneNumber) {
     return 'Array com tamanho incorreto.';
   }
   for (let index of phoneNumber) {
-    if (phoneNumber[index] < 0 || phoneNumber[index] > 9 || compareNumbers(phoneNumber, phoneNumber[index]) >= 3) {
+    if (phoneNumber[index] < 0 || phoneNumber[index] > 9 || compareNumbers() >= 3) {
       return 'não é possível gerar um número de telefone com esses valores';
     }
   }
@@ -36,7 +36,7 @@ function compareNumbers(numbers) {
         count += 1;
       }
     }
-}
+  }
   return count;
 }
 
