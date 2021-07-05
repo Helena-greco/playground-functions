@@ -63,7 +63,7 @@ function catAndMouse(mouse, cat1, cat2) { // O comando Math.abs foi utilizado na
 // Desafio 8
 function fizzBuzz(array) {
   let status = [];
-  for (let index of array) {
+    for (let index of array) {
     if (index % 3 === 0 && index % 5 === 0) {
       status.push('fizzBuzz');
     } else if (index % 5 === 0) {
