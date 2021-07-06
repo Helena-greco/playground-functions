@@ -66,8 +66,13 @@ function createNumber(phoneNumber) {
 console.log(createNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  if (lineA > lineB + lineC) {
+    return false;
+  } if (lineA < Math.abs(lineB - lineC)) {
+    return false;
+  } 
+  return true;
 }
 
 // Desafio 13
